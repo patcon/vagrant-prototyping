@@ -8,14 +8,13 @@ framework and ecosystem for developers to achieve parity with multiple
 production deployment targets, as well as a one-click installer control
 panel that makes advanced local development accessible.
 
-For full documentation information, please see the
-[Wiki](https://github.com/proviso/proviso/wiki).
-
 Features
 --------
 
 - `vagrant-vbguest`: Ensures that [`Virtual Guest
 Additions`][vbox-guest-additions] are in sync.
+- Package manager (apt) caching between VM destroys via
+[`vagrant-cachier`][vagrant-cachier].
 
 Usage
 -----
@@ -44,3 +43,4 @@ of your terminal session by running:
 
 <!-- Links -->
    [vbox-guest-additions]: http://www.virtualbox.org/manual/ch04.html
+   [vagrant-cachier]: https://github.com/fgrehm/vagrant-cachier#readme
