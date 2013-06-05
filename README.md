@@ -11,11 +11,13 @@ panel that makes advanced local development accessible.
 Features
 --------
 
-- `vagrant-vbguest`: Ensures that [Virtualbox Guest
+- [`vagrant-vbguest`][plugin-vbguest]: Ensures that [Virtualbox Guest
 Additions][vbox-guest-additions] are up-to-date, for stable
 virtualization behavior.
-- [`vagrant-cachier`][vagrant-cachier]: Caches APT system packages
+- [`vagrant-cachier`][plugin-cachier]: Caches APT system packages
 between VM destroys, for faster builds.
+- [`vagrant-box-updater`][plugin-box-updater]: Keeps local boxes up-to-date with remote box
+updates, for assurance that all users have the same stack.
 
 Usage
 -----
@@ -44,4 +46,6 @@ of your terminal session by running:
 
 <!-- Links -->
    [vbox-guest-additions]: http://www.virtualbox.org/manual/ch04.html
-   [vagrant-cachier]: https://github.com/fgrehm/vagrant-cachier#readme
+   [plugin-box-updater]:   https://github.com/spil-ruslan/vagrant-box-updater#readme
+   [plugin-cachier]:       https://github.com/fgrehm/vagrant-cachier#readme
+   [plugin-vbguest]:       https://github.com/dotless-de/vagrant-vbguest#readme
