@@ -11,10 +11,11 @@ panel that makes advanced local development accessible.
 Features
 --------
 
-- `vagrant-vbguest`: Ensures that [`Virtual Guest
-Additions`][vbox-guest-additions] are in sync.
-- Package manager (apt) caching between VM destroys via
-[`vagrant-cachier`][vagrant-cachier].
+- `vagrant-vbguest`: Ensures that [Virtualbox Guest
+Additions][vbox-guest-additions] are up-to-date, for stable
+virtualization behavior.
+- [`vagrant-cachier`][vagrant-cachier]: Caches APT system packages
+between VM destroys, for faster builds.
 
 Usage
 -----
