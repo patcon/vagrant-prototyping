@@ -18,6 +18,8 @@ virtualization behavior.
 between VM destroys, for faster builds.
 - [`vagrant-box-updater`][plugin-box-updater]: Keeps local boxes up-to-date with remote box
 updates, for assurance that all users have the same stack.
+- [`vagrant-omnibus`][plugin-omnibus]: Installs a specific Chef version in the VM,
+for maximum consistency between baseboxes and OSes.
 
 Usage
 -----
@@ -48,4 +50,5 @@ of your terminal session by running:
    [vbox-guest-additions]: http://www.virtualbox.org/manual/ch04.html
    [plugin-box-updater]:   https://github.com/spil-ruslan/vagrant-box-updater#readme
    [plugin-cachier]:       https://github.com/fgrehm/vagrant-cachier#readme
+   [plugin-omnibus]:       https://github.com/schisamo/vagrant-omnibus#readme
    [plugin-vbguest]:       https://github.com/dotless-de/vagrant-vbguest#readme
