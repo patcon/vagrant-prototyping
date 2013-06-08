@@ -3,4 +3,8 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'php'
+cookbook 'apt'
+cookbook 'git'
+cookbook 'openssh'
+cookbook 'vim'
+cookbook 'zsh'
