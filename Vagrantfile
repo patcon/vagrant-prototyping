@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.cache.auto_detect = true
+  config.cache.auto_detect = true if plugin_installed?("cachier")
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
 
@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   case ENV['PROVISO_PROVISIONER']
   when /chef/i, nil
     config.librarian_chef.cheffile_dir = "chef"
-    config.omnibus.chef_version = "11.4.4"
+    config.omnibus.chef_version = "11.4.4" if plugin_installed?("omnibus")
 
     config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = "chef/cookbooks"
