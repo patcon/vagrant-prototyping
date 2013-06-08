@@ -5,6 +5,8 @@ require_relative 'lib/proviso/helpers'
 include Proviso::Helpers
 
 Vagrant.configure("2") do |config|
+  config.vm.define "proviso"
+
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
