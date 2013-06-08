@@ -7,5 +7,7 @@ cookbook 'apt'
 cookbook 'fail2ban'
 cookbook 'git'
 cookbook 'openssh'
+cookbook 'unattended-upgrades',
+  :git => "https://github.com/firstbanco/chef-unattended-upgrades"
 cookbook 'vim'
 cookbook 'zsh'

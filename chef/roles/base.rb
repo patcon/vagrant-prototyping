@@ -2,6 +2,7 @@ name "base"
 description "The base role for servers."
 run_list([
   "recipe[apt]",
+  "recipe[unattended-upgrades]",
   "recipe[fail2ban]",
   "recipe[git]",
   "recipe[zsh]",
@@ -17,5 +18,10 @@ default_attributes({
       "password_authentication" => "no",
       "permit_root_login" => "no",
     },
+  },
+  "unattended-upgrades" => {
+    "origins" => [
+      '${distro_codename}-security'
+    ],
   },
 })

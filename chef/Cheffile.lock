@@ -23,11 +23,20 @@ SITE
     yum (2.2.2)
     zsh (1.0.0)
 
+GIT
+  remote: https://github.com/firstbanco/chef-unattended-upgrades
+  ref: master
+  sha: 24cf40f5743fac8e7814e58cc8e3dde2f1ca2de9
+  specs:
+    unattended-upgrades (1.0.0)
+      apt (>= 0.0.0)
+
 DEPENDENCIES
   apt (>= 0)
   fail2ban (>= 0)
   git (>= 0)
   openssh (>= 0)
+  unattended-upgrades (>= 0)
   vim (>= 0)
   zsh (>= 0)
 
