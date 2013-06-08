@@ -2,6 +2,7 @@ name "base"
 description "The base role for servers."
 run_list([
   "recipe[apt]",
+  "recipe[fail2ban]",
   "recipe[git]",
   "recipe[zsh]",
   "recipe[openssh]",
