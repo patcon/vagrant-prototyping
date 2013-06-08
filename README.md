@@ -47,6 +47,11 @@ of your terminal session by running:
 
     export PROVISO_PROVISIONER=puppet
 
+## Amazon EC2
+
+    vagrant box add precise64 https://dl.dropboxusercontent.com/u/7353431/aws-precise64.box
+    PROVISO_PROVIDER=aws vagrant up
+
 <!-- Links -->
    [vbox-guest-additions]: http://www.virtualbox.org/manual/ch04.html
    [plugin-box-updater]:   https://github.com/spil-ruslan/vagrant-box-updater#readme
