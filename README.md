@@ -20,6 +20,7 @@ between VM destroys, for faster builds.
 updates, for assurance that all users have the same stack.
 - [`vagrant-omnibus`][plugin-omnibus]: Installs a specific Chef version in the VM,
 for maximum consistency between baseboxes and OSes.
+- Hardened security following best-practices.
 
 Usage
 -----
