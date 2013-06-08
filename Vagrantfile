@@ -8,7 +8,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  config.cache.auto_detect = true if plugin_installed?("cachier")
+  # Awaiting on PR before using plugin_installed? helper method:
+  # https://github.com/fgrehm/vagrant-cachier/pull/9
+  config.cache.auto_detect = true # if plugin_installed?("cachier")
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
 
