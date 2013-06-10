@@ -12,7 +12,5 @@ cookbook 'openssh'
 cookbook 'unattended-upgrades',
   :git => "https://github.com/firstbanco/chef-unattended-upgrades"
 cookbook 'vim'
-cookbook 'yum',
-  :git => 'https://github.com/patcon/yum',
-  :ref => 'COOK-3143-fix-key-provider-url'
+cookbook 'yum'
 cookbook 'zsh'

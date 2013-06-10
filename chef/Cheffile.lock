@@ -22,6 +22,7 @@ SITE
     vim (1.0.2)
     windows (1.9.0)
       chef_handler (>= 0.0.0)
+    yum (2.2.4)
     zsh (1.0.0)
 
 GIT
@@ -31,13 +32,6 @@ GIT
   specs:
     unattended-upgrades (1.0.0)
       apt (>= 0.0.0)
-
-GIT
-  remote: https://github.com/patcon/yum
-  ref: COOK-3143-fix-key-provider-url
-  sha: 39d1a898bd539ce47cf37c4b47ae61f4c807f8b5
-  specs:
-    yum (2.2.5)
 
 PATH
   remote: cookbooks-source/base
