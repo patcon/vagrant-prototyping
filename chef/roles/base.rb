@@ -1,8 +1,17 @@
 name "base"
 description "The base role for servers."
-run_list([
+
+debian = [
   "recipe[apt]",
   "recipe[unattended-upgrades]",
+]
+
+redhat = [
+  "recipe[yum::epel]",
+]
+
+run_list([
+  "recipe[base]",
   "recipe[fail2ban]",
   "recipe[git]",
   "recipe[zsh]",

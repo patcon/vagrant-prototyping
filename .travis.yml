@@ -3,7 +3,9 @@ rvm:
   - 1.9.3-p327 # Vagrant 1.2.2
 
 script:
-  - true
+  - cd chef
+  - bundle install
+  - bundle exec kitchen test
 
 notifications:
   email: false

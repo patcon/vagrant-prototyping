@@ -2,6 +2,9 @@
 
 chef/cookbooks
 chef/tmp
+chef/.librarian
+chef/.kitchen/
+chef/.kitchen.local.yml
 
 puppet/modules
 puppet/.tmp

@@ -4,6 +4,8 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
+cookbook 'base',
+  :path => 'cookbooks-source/base'
 cookbook 'fail2ban'
 cookbook 'git'
 cookbook 'openssh'
