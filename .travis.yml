@@ -17,7 +17,7 @@ env:
 
 script:
 - cd chef && bundle install
-- bundle exec kitchen test --parallel #--destroy=always
+- bundle exec kitchen test --parallel --destroy=always
 
 branches:
   only:
