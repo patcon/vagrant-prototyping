@@ -3,8 +3,8 @@ driver_plugin: ec2
 driver_config:
   aws_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
   aws_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
-  aws_ssh_key_id: patcon-macbook
-  ssh_key: <%= File.expand_path('~/.ssh/id_rsa') %>
+  aws_ssh_key_id: vagrant
+  ssh_key: <%= File.expand_path('./../keys/vagrant') %>
   availability_zone: us-east-1d
   require_chef_omnibus: 11.4.4
 
