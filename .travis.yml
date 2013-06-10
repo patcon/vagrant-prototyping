@@ -7,5 +7,9 @@ script:
   - bundle install
   - bundle exec kitchen test
 
+branches:
+  only:
+    - develop
+
 notifications:
   email: false
