@@ -10,10 +10,12 @@ driver_config:
   require_chef_omnibus: 11.4.4
 
 platforms:
+# Source: http://cloud-images.ubuntu.com/locator/ec2/
 - name: precise64
   driver_config:
     image_id: ami-e7582d8e
     username: ubuntu
+# Source: http://wiki.centos.org/Cloud/AWS
 - name: centos6-64
   driver_config:
     image_id: ami-8a8932e3
