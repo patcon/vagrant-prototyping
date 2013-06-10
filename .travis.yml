@@ -5,6 +5,7 @@ rvm:
 
 env:
   global:
+  - LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1
     # AWS_ACCESS_KEY_ID
   - secure: ! 'bOFXRCz/K7ILIo+9s1r9y9EkCmgCseEz3sBw+brwy86vm+rLf5kefseDGgHk
       2r3k8UBGzUkMt5ipTldyZkCVhGrIZyJt/Ni54LhjElfCd2YHE4YSh6EAroRg
@@ -15,9 +16,8 @@ env:
       iS8GC7cHMnRhIE2yeLRXG0GRwAvtLP4mK+Ek1FzeOblGLvmffPg='
 
 script:
-- cd chef
-- bundle install
-- LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1 bundle exec kitchen test --parallel #--destroy=always
+- cd chef && bundle install
+- bundle exec kitchen test --parallel #--destroy=always
 
 branches:
   only:
