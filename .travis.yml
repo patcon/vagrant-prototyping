@@ -1,15 +1,25 @@
+---
 language: ruby
 rvm:
-  - 1.9.3-p327 # Vagrant 1.2.2
+- 1.9.3-p327
+
+env:
+  global:
+    # AWS_ACCESS_KEY_ID
+  - secure: ! 'bOFXRCz/K7ILIo+9s1r9y9EkCmgCseEz3sBw+brwy86vm+rLf5kefseDGgHk
+      2r3k8UBGzUkMt5ipTldyZkCVhGrIZyJt/Ni54LhjElfCd2YHE4YSh6EAroRg
+      rKan9DN79EvFd9fieGY/W0ffrzIoTPHM5DfYwrkmeAfJ9aYRtSA='
+    # AWS_SECRET_ACCESS_KEY
+  - secure: ! 'gtU2igh8M9eX7QO/DQky9eecbbiHVCvrZ8CBcEZlgIA8uHUmYTYF7fwgWlXS
+      FBjiaxUyRmneluGerbaNPCZotupRwcBRA4C0R63YbB6rUSS/tSgaHt7nybNm
+      iS8GC7cHMnRhIE2yeLRXG0GRwAvtLP4mK+Ek1FzeOblGLvmffPg='
 
 script:
-  - cd chef
-  - bundle install
-  - bundle exec kitchen test
-
+- cd chef
+- bundle install
+- bundle exec kitchen test
 branches:
   only:
-    - develop
-
+  - develop
 notifications:
   email: false

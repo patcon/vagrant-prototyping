@@ -1,6 +1,6 @@
 # Proviso
 [![Build
-Status](https://travis-ci.org/proviso/proviso.png)](https://travis-ci.org/proviso/proviso)
+Status](https://travis-ci.org/patcon/vagrant-prototyping.png)](https://travis-ci.org/patcon/vagrant-prototyping)
 
 Proviso aims to be an SDK+API to provision platform-independent local
 VMs for Drupal development. The project seeks to develop an extensible
@@ -27,7 +27,8 @@ Usage
 
 ### 1. Setup
 
-    git clone https://github.com/proviso/proviso.git && cd proviso
+    git clone https://github.com/proviso/proviso.git --recursive
+    cd proviso
     rake install_plugins
 
 ### 2a. Chef
