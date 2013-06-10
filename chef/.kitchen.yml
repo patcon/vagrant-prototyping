@@ -3,6 +3,7 @@ driver_plugin: ec2
 driver_config:
   aws_access_key_id: <%= ENV['AWS_ACCESS_KEY_ID'] %>
   aws_secret_access_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+  # instance_type: ebs
   flavor_id: t1.micro
   aws_ssh_key_id: vagrant
   ssh_key: <%= File.expand_path('./../keys/vagrant') %>
@@ -15,11 +16,16 @@ platforms:
   driver_config:
     image_id: ami-e7582d8e
     username: ubuntu
-# Source: http://wiki.centos.org/Cloud/AWS
-- name: centos6-64
+# Source: http://www.bashton.com/blog/2013/updated-centos-6-3-ec2-ami/
+- name: centos63-64
   driver_config:
-    image_id: ami-8a8932e3
-    username: root
+    image_id: ami-c53fb7ac
+    username: ec2-user
+# Source: http://www.bashton.com/blog/2013/centos-6-4-ami-available/
+- name: centos64-64
+  driver_config:
+    image_id: ami-52009e3b
+    username: ec2-user
 
 suites:
 - name: default
