@@ -19,7 +19,7 @@ platforms:
 - name: centos6-64
   driver_config:
     image_id: ami-8a8932e3
-    username: ec2-user
+    username: root
 
 suites:
 - name: default
