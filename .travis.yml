@@ -17,9 +17,11 @@ env:
 script:
 - cd chef
 - bundle install
-- bundle exec kitchen test
+- LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1 bundle exec kitchen test --parallel
+
 branches:
   only:
   - develop
+
 notifications:
   email: false
