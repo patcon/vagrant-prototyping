@@ -17,7 +17,7 @@ env:
 script:
 - cd chef
 - bundle install
-- LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1 bundle exec kitchen test --parallel
+- LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1 bundle exec kitchen test --parallel --destroy=always
 
 branches:
   only:
