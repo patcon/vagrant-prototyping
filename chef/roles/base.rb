@@ -1,15 +1,5 @@
 name "base"
 description "The base role for servers."
-
-debian = [
-  "recipe[apt]",
-  "recipe[unattended-upgrades]",
-]
-
-redhat = [
-  "recipe[yum::epel]",
-]
-
 run_list([
   "recipe[base]",
   "recipe[fail2ban]",
@@ -32,5 +22,10 @@ default_attributes({
     "origins" => [
       '${distro_codename}-security'
     ],
+  },
+  "yum" => {
+    "epel" => {
+      "key_url" => "http://fedora.mirror.nexicom.net/epel/RPM-GPG-KEY-EPEL-6",
+    },
   },
 })
