@@ -22,6 +22,16 @@ updates, for assurance that all users have the same stack.
 for maximum consistency between baseboxes and OSes.
 - Hardened security following best-practices.
 
+Supports
+--------
+
+This project is tested against the following platforms:
+
+- Ubuntu Precise 10.04
+- CentOS 6.2
+- CentOS 6.3
+- CentOS 6.4
+
 Usage
 -----
 
