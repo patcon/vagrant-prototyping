@@ -22,7 +22,6 @@ SITE
     vim (1.0.2)
     windows (1.9.0)
       chef_handler (>= 0.0.0)
-    yum (2.2.4)
     zsh (1.0.0)
 
 GIT
@@ -32,6 +31,13 @@ GIT
   specs:
     unattended-upgrades (1.0.0)
       apt (>= 0.0.0)
+
+GIT
+  remote: https://github.com/patcon/yum
+  ref: COOK-3145-better-epel-key-url
+  sha: 75cdde2b6f38ca82f4db702e71d239c91ea1c783
+  specs:
+    yum (2.2.5)
 
 PATH
   remote: cookbooks-source/base

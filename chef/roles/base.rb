@@ -23,9 +23,4 @@ default_attributes({
       '${distro_codename}-security'
     ],
   },
-  "yum" => {
-    "epel" => {
-      "key_url" => "http://fedora.mirror.nexicom.net/epel/RPM-GPG-KEY-EPEL-6",
-    },
-  },
 })
