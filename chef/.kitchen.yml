@@ -12,6 +12,10 @@ driver_config:
 
 platforms:
 # Source: http://cloud-images.ubuntu.com/locator/ec2/
+- name: lucid64
+  driver_config:
+    image_id: ami-b70374de
+    username: ubuntu
 - name: precise64
   driver_config:
     image_id: ami-e7582d8e
