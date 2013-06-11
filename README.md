@@ -25,9 +25,10 @@ for maximum consistency between baseboxes and OSes.
 Supports
 --------
 
-This project is tested against the following platforms:
+This project is tested against the following 64-bit platforms:
 
-- Ubuntu Precise 10.04
+- Ubuntu Lucid (10.04 LTS)
+- Ubuntu Precise (12.04 LTS)
 - CentOS 6.2
 - CentOS 6.3
 - CentOS 6.4
