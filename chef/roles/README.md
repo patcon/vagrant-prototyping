@@ -15,11 +15,10 @@ is how they're nested within one another (with higher-level roles
 calling deeper-level ones):
 
     roles                       # TYPE OF CONFIG
-    └── ariadne                 # Role added by Vagrant
-        └── acquia              # Configs to emulate Acquia
-        │   ├── apache2_php_cgi # Alt: apache2_mod_php
-        │   ├── memcache
-        │   ├── mysql           # Percona drop-in MySQL replacement
-        │   ├── varnish
-        │   └── drupal          # Drupal-specific configs
+    └── priviso                 # Role added by Vagrant
+        ├── base                # Basic server setup
+        ├── lamp                # Basic LAMP stack config
+        │   ├── apache2_mod_php # Apache + PHP
+        │   └── mysql           # Percona drop-in MySQL replacement
+        ├── drupal              # Drupal-specific configs
         └── dev_tools           # Local development tools

@@ -49,7 +49,7 @@ Vagrant.configure("2") do |config|
       chef.roles_path = "chef/roles"
       chef.log_level = :debug if debug_mode?
 
-      chef.add_role "base"
+      chef.add_role "proviso"
     end
   when /puppet/i
     config.vm.provision :puppet do |puppet|
