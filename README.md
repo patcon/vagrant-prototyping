@@ -29,9 +29,7 @@ This project is tested against the following 64-bit platforms:
 
 - Ubuntu Lucid (10.04 LTS)
 - Ubuntu Precise (12.04 LTS)
-- CentOS 6.2
-- CentOS 6.3
-- CentOS 6.4
+- CentOS 6
 
 Usage
 -----
