@@ -13,7 +13,6 @@ cookbook 'unattended-upgrades',
   :git => "https://github.com/firstbanco/chef-unattended-upgrades"
 cookbook 'vim'
 cookbook 'yum',
-  # Pending PR: https://github.com/opscode-cookbooks/yum/pull/49
-  :git => 'https://github.com/patcon/yum',
-  :ref => 'COOK-3145-better-epel-key-url'
+  # Pending release: https://github.com/opscode-cookbooks/yum/pull/49
+  :git => 'https://github.com/opscode-cookbooks/yum'
 cookbook 'zsh'

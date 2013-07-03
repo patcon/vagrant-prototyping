@@ -33,11 +33,11 @@ GIT
       apt (>= 0.0.0)
 
 GIT
-  remote: https://github.com/patcon/yum
-  ref: COOK-3145-better-epel-key-url
-  sha: 75cdde2b6f38ca82f4db702e71d239c91ea1c783
+  remote: https://github.com/opscode-cookbooks/yum
+  ref: master
+  sha: fe4137b75bc1c3c4f4c0c0a3251a97b78f8bb518
   specs:
-    yum (2.2.5)
+    yum (2.3.1)
 
 PATH
   remote: cookbooks-source/base
