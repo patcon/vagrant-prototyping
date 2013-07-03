@@ -75,6 +75,7 @@ GEM
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
+    rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     ruby-hmac (0.4.0)
@@ -99,3 +100,4 @@ PLATFORMS
 DEPENDENCIES
   kitchen-ec2
   librarian-chef
+  rake

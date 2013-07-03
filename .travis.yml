@@ -3,6 +3,9 @@ language: ruby
 rvm:
 - 1.9.3-p327
 
+gemfile:
+  - chef/test/support/Gemfile
+
 env:
   global:
   - LIBRARIAN_CHEF_INSTALL__STRIP_DOT_GIT=1
@@ -16,8 +19,7 @@ env:
       iS8GC7cHMnRhIE2yeLRXG0GRwAvtLP4mK+Ek1FzeOblGLvmffPg='
 
 script:
-- cd chef && bundle install
-- bundle exec kitchen test --parallel --destroy=always
+- cd chef && bundle exec rake kitchen
 
 branches:
   only:
