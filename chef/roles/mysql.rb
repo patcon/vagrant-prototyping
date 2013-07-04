@@ -9,8 +9,8 @@ default_attributes(
     :server_debian_password => "root",
     :server_root_password => "root",
     :server_repl_password => "root",
+    :percona => {
+      :apt_keyserver => "zimmermann.mayfirst.org",
+    },
   },
-  :percona => {
-    :version => "5.5",
-  }
 )

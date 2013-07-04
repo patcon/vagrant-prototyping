@@ -1,6 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    apache2 (1.6.2)
     apt (2.0.0)
     build-essential (1.4.0)
     chef_handler (1.1.4)
@@ -14,14 +15,24 @@ SITE
       windows (>= 0.0.0)
       yum (>= 0.0.0)
     iptables (0.12.0)
+    mysql (3.0.2)
+      build-essential (> 1.1.0)
+      openssl (>= 0.0.0)
     openssh (1.2.0)
       iptables (>= 0.0.0)
+    openssl (1.0.2)
+    php (1.2.2)
+      build-essential (>= 0.0.0)
+      mysql (>= 0.0.0)
+      xml (>= 0.0.0)
     runit (1.1.4)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
     vim (1.0.2)
     windows (1.9.0)
       chef_handler (>= 0.0.0)
+    xml (1.1.2)
+      build-essential (>= 0.0.0)
     zsh (1.0.0)
 
 GIT
@@ -40,6 +51,15 @@ GIT
     yum (2.3.1)
 
 PATH
+  remote: /Users/patcon/repos/chef-percona-phlipper
+  specs:
+    percona (0.14.5)
+      apt (>= 1.4.4)
+      mysql (>= 3.0.0)
+      openssl (>= 0.0.0)
+      yum (>= 0.0.0)
+
+PATH
   remote: cookbooks-source/base
   specs:
     base (0.0.1)
@@ -48,11 +68,14 @@ PATH
       yum (>= 0.0.0)
 
 DEPENDENCIES
+  apache2 (>= 0)
   apt (>= 0)
   base (>= 0)
   fail2ban (>= 0)
   git (>= 0)
   openssh (>= 0)
+  percona (>= 0)
+  php (>= 0)
   unattended-upgrades (>= 0)
   vim (>= 0)
   yum (>= 0)

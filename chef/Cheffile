@@ -3,12 +3,19 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'apache2'
 cookbook 'apt'
 cookbook 'base',
   :path => 'cookbooks-source/base'
 cookbook 'fail2ban'
 cookbook 'git'
 cookbook 'openssh'
+cookbook 'percona',
+  :path => File.expand_path("~/repos/chef-percona-phlipper")
+  # Pending PR: https://github.com/phlipper/chef-percona/pull/68
+  #:git => 'https://github.com/patcon/chef-percona',
+  #:ref => '68-percona-server-recipe'
+cookbook 'php'
 cookbook 'unattended-upgrades',
   :git => "https://github.com/firstbanco/chef-unattended-upgrades"
 cookbook 'vim'
